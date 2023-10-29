@@ -45,7 +45,7 @@ export default function NavbarComponent() {
 
         <AiOutlineClose size={30} onClick={() => setNav(!nav)} className='absolute right-4 top-4 cursor-pointer' />
         <h2 className='text-2xl p-4'>
-          Food<span>Eats</span>
+          Food<span class="font-bold">Eats</span>
         </h2>
         <nav>
           <ul>
