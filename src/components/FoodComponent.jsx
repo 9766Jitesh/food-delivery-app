@@ -49,16 +49,16 @@ export default function FoodComponent() {
                     
                 </div>
             </div>
-            <div className='grid grid-cols-3 md:grid-cols-6 gap-6 py-6 '>
+            <div className='grid grid-cols-3 md:grid-cols-4 w-full gap-6 py-6 '>
                 {foods.map((item,index)=>{
                     return(
 
                     <div key={index} className='flex justify-items-left'>
                         <div className='bg-white-200  border border-black-300 rounded-lg  '>
-                            <img className='w-full rounded-tl rounded-tr h-40'src={item.image} alt=''/>
+                            <img className='w-full rounded-tl rounded-tr h-40 md:h-60'src={item.image} alt=''/>
                             <div className='flex justify-between p-1'>
-                                <p className=''>{item.name}</p>
-                                <p>{item.price}</p>
+                                <p className='font-bold'>{item.name}</p>
+                                <p className='bg-red-600  text-white rounded'>{item.price}</p>
                              </div>
                         </div>
                     </div>

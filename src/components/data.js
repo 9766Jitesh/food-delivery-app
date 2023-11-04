@@ -105,3 +105,54 @@
         image: "https://img.freepik.com/free-photo/fresh-salad-with-vegetables-tomatoes-red-onions-lettuce-quail-eggs-healthy-food-diet-concept-vegetarian-food_2829-20246.jpg?w=740&t=st=1699134508~exp=1699135108~hmac=c1ca16b337febf844b3b189ec9649c9341fd2324d770c5d7a9346b5b5bc65422"
     }
  ]
+
+ export const categories=[
+    {
+        id:'1',
+        name:'Fastfood',
+        image:'https://cdn.icon-icons.com/icons2/281/PNG/256/Fast-Food-icon_30334.png',
+
+    },
+    {
+        id:'2',
+        name:'Pizza',
+        image:'https://cdn.icon-icons.com/icons2/881/PNG/512/Pizza_icon-icons.com_68706.png',
+
+    },
+    {
+        id:'3',
+        name:'Wings',
+        image:'https://cdn.icon-icons.com/icons2/3277/PNG/512/fried_chicken_bucket_chicken_wings_food_icon_208005.png',
+
+    },
+    {
+        id:'4',
+        name:'Indian',
+        image:'https://png.pngtree.com/png-clipart/20210917/ourlarge/pngtree-indian-food-tali-rich-cuisine-on-banana-leaves-png-image_3933504.jpg',
+
+    },
+    {
+        id:'5',
+        name:'Latest Deals',
+        image:'https://cdn-icons-png.flaticon.com/512/3687/3687943.png',
+
+    },
+    {
+        id:'6',
+        name:'Restaurent Rewards',
+        image:'https://cdn-icons-png.flaticon.com/512/1344/1344812.png',
+
+    },
+    {
+        id:'7',
+        name:'Best Overall',
+        image:'https://cdn-icons-png.flaticon.com/512/776/776616.png',
+
+    },
+    {
+        id:'8',
+        name:'Shipped free',
+        image:'https://png.pngtree.com/png-clipart/20190705/original/pngtree-free-shipping-stamp-vector-png-image_4293922.jpg',
+
+    },
+ ]

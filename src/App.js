@@ -11,8 +11,8 @@ function App() {
       <NavbarComponent></NavbarComponent>
       <HeroComponent></HeroComponent>
       <HeadLineCompCard></HeadLineCompCard>
-      <CategoryComponent></CategoryComponent>
       <FoodComponent></FoodComponent>
+      <CategoryComponent></CategoryComponent>
       
     </div>
   );
