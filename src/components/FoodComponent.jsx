@@ -21,7 +21,7 @@ export default function FoodComponent() {
     }
 
     return (
-        <div>
+        <div className='max-w-[1640px] mx-auto px-4 py-12'>
             <h1 className='text-red-600 font-bold text-4xl text-center py-4'>Top Rated Menu Items</h1>
             <div>
                 <p>Filter Type</p>
@@ -49,13 +49,13 @@ export default function FoodComponent() {
                     
                 </div>
             </div>
-            <div className='grid grid-cols-3 md:grid-cols-4 w-full gap-6 py-6 '>
+            <div className='grid grid-cols-2 md:grid-cols-4 w-full gap-6 py-6 '>
                 {foods.map((item,index)=>{
                     return(
 
-                    <div key={index} className='flex justify-items-left'>
-                        <div className='bg-white-200  border border-black-300 rounded-lg  '>
-                            <img className='w-full rounded-tl rounded-tr h-40 md:h-60'src={item.image} alt=''/>
+                    <div key={index} className=' flex justify-items-left p-2 transition-transform transform hover:scale-105 focus:scale-105'>
+                        <div className='bg-white-200  border border-black-300 rounded-lg '>
+                            <img className='w-64 h-64 rounded-tl rounded-tr 'src={item.image} alt='' />
                             <div className='flex justify-between p-1'>
                                 <p className='font-bold'>{item.name}</p>
                                 <p className='bg-red-600  text-white rounded'>{item.price}</p>

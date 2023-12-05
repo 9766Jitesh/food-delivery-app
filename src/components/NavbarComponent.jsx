@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
 import { BsFillCartFill, BsFillSaveFill } from 'react-icons/bs'
-import { TbTruckDelivery } from 'react-icons/tb'
-import { MdFavorite, MdHelp } from 'react-icons/md'
+import {  TbTruckDelivery } from 'react-icons/tb'
+import { MdFavorite, MdHelp, MdOutlineLogin } from 'react-icons/md'
 import { FaUserFriends, FaWallet } from 'react-icons/fa'
 import { AiFillTag } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 export default function NavbarComponent() {
   const [nav, setNav] = useState(false);
+  
   return (
 
 
@@ -32,11 +34,23 @@ export default function NavbarComponent() {
       </div>
 
       {/* cart button */}
-      <button
-        className='bg-black  text-white hidden md:flex item-center px-3 py-2 rounded-full'>
-        <BsFillCartFill size={20} className='mr-2' />
-        cart
-      </button>
+      <div className='md:flex space-x-1 item-center'>
+
+        <button
+          className='bg-black  text-white hidden md:flex item-center px-3 py-2 rounded-full'>
+          <BsFillCartFill size={20} className='mr-2' />
+          cart
+        </button>
+
+        {/* login button */}
+        <Link to="/login">
+        <button
+          className='bg-black  text-white hidden md:flex item-center px-1 py-2 rounded-full'>
+          <MdOutlineLogin size={20} className='mr-2' />
+          Login
+        </button>
+        </Link>
+      </div>
 
       {/* mobile menu */}
       {/*overlays */}
